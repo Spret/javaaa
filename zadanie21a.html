@@ -1,0 +1,35 @@
+<html>
+<body>
+<div style="color:red;font-size:61px;">
+ <script language="JavaScript">
+var b_spr=prompt("wczytaj b=","");
+var c_spr=prompt("wczytaj c=","");
+
+var b_spr=parseFloat(b_spr);
+var c_spr=parseFloat(c_spr); 
+ 
+var a_spr=Math.sqrt((c_spr*c_spr)-(b_spr*b_spr)).toFixed(3);
+var pole=((a_spr*b_spr)/2).toFixed(3);
+var h3=((a_spr*b_spr)/c_spr).toFixed(3);
+var alpha=(Math.sin(a_spr/c_spr)*180/Math.PI).toFixed(3);
+var beta=(90-alpha).toFixed(3);
+var sin_alpha=(a_spr/c_spr).toFixed(3);
+var cos_alpha=(b_spr/c_spr).toFixed(3);
+var tg_alpha=(a_spr/b_spr).toFixed(3);
+var ctg_alpha=(b_spr/a_spr).toFixed(3);
+
+document.write("bok a: "+a_spr+"cm <br>");
+document.write("pole: "+pole+"cm2 <br>");
+document.write("h1: "+a_spr+"cm <br>");
+document.write("h2: "+b_spr+"cm <br>");
+document.write("h3: "+h3+"cm <br>");
+document.write("alpha: "+alpha+"° <br>");
+document.write("beta: "+beta+"° <br>");
+document.write("sinus alpha: "+sin_alpha+"<br>");
+document.write("cosinus alpha: "+cos_alpha+"<br>");
+document.write("tangens alpha: "+tg_alpha+"<br>");
+document.write("cotangens alpha: "+ctg_alpha+"<br>");
+ </script>
+</div>
+</body>
+</html>
